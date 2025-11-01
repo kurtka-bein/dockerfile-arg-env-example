@@ -4,9 +4,6 @@ FROM python:3.11-alpine
 # Build-time аргумент
 ARG TEST_ARG
 
-# Превращаем его в runtime переменную окружения
-ENV TEST_ENV=${TEST_ARG}
-
 # Устанавливаем Flask
 RUN pip install --no-cache-dir flask
 
